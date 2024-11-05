@@ -1,0 +1,23 @@
+import os, wget
+
+def is_exist(file_links):
+    return os.path.exists(f"./{file_links['title']}.pdf")
+
+file_links = [
+    {
+        "title": "Time-shift image enhancement method",
+        "url": "https://www.researchgate.net/profile/Boran-Sekeroglu-3/publication/373620142_Time-shift_image_enhancement_method/links/64faef185ce6b724f91636ac/Time-shift-image-enhancement-method.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24ifX0",
+    },
+    {
+        "title": "New intelligent flower arrangement system",
+        "url": "https://www.researchgate.net/publication/384875323_New_intelligent_flower_arrangement_system/fulltext/670b72fce3c0600c7ca0afda/New-intelligent-flower-arrangement-system.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicHJldmlvdXNQYWdlIjoiX2RpcmVjdCJ9fQ",
+    },
+    {
+        "title": "Taxon‐specific response of natural enemies to different flower strip mixtures",
+        "url": "https://www.researchgate.net/journal/Journal-of-Applied-Ecology-1365-2664/publication/383218254_Taxon-specific_response_of_natural_enemies_to_different_flower_strip_mixtures/links/66c2eb1c8d007355925fefdc/Taxon-specific-response-of-natural-enemies-to-different-flower-strip-mixtures.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicHJldmlvdXNQYWdlIjoiX2RpcmVjdCJ9fQ",
+    },
+    {
+        "title": "Patterns of decomposition and functional traits for flower and leaf litter in tropical woody species",
+        "url": "https://www.researchgate.net/profile/Ana-Elizabeth-Asato/publication/384898232_Patterns_of_decomposition_and_functional_traits_for_flower_and_leaf_litter_in_tropical_woody_species/links/670d32a61a0a901a3e716db5/Patterns-of-decomposition-and-functional-traits-for-flower-and-leaf-litter-in-tropical-woody-species.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicHJldmlvdXNQYWdlIjoiX2RpcmVjdCJ9fQ",
+    },
+]
