@@ -60,7 +60,7 @@ def get_hf_llm(model_name: str = "mistralai/Mistral-7B-Instruct-v0.2",
     # Make sure the model path is correct for your system!
     llm = LlamaCpp(
         # model_path="/Users/genson1808/workspace/ai/chatbot/models/phi-2.Q5_K_M.gguf",
-        model_path="/Users/genson1808/workspace/ai/chatbot/models/vinallama-7b-chat_q5_0.gguf",
+        model_path="/Users/genson1808/.cache/lm-studio/models/hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
         n_gpu_layers=n_gpu_layers,
         n_batch=n_batch,
         f16_kv=True,  # MUST set to True, otherwise you will run into problem after a couple of calls

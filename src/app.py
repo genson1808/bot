@@ -11,7 +11,7 @@ from src.base.llm_model import get_hf_llm
 from src.rag.main import build_rag_chain, InputQA, OutputQA
 
 llm = get_hf_llm(temperature=0.9)
-genai_docs = "/Users/genson1808/workspace/ai/chat_rag/data_source/generative_ai"
+genai_docs = "/Users/genson1808/workspace/ai/chat_rag/data_source/docs"
 
 genai_chain = build_rag_chain(llm, data_dir=genai_docs, data_type="pdf")
 
